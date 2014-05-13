@@ -126,3 +126,16 @@ to read about a specific subcommand or concept.
 
 
 `git add` añade archivos y cambios a una cola de commit
+
+1. Enlaza el repositorio actual, con un repositorio "remoto"
+
+    git remote add origin git@github.com:jfgomez86/git-course.git
+
+2. Sincronizar el repositorio local con el remoto
+
+    git push -u origin master
+
+
+3. Dudas?
+
+    git help push
