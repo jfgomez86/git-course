@@ -139,3 +139,7 @@ to read about a specific subcommand or concept.
 3. Dudas?
 
     git help push
+
+- Set upstream branch:
+
+git push --set-upstream origin master
