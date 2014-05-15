@@ -1,6 +1,8 @@
 GIT
 ===
 
+by: Jose Gomez.
+
 ## Acknowledgements
 
 Git = SCM ~= SVN ~= CVS ~= Mercurial (hg) ~= Perforce ~= ...
@@ -143,3 +145,36 @@ to read about a specific subcommand or concept.
 - Set upstream branch:
 
 git push --set-upstream origin master
+
+===
+
+2 Formas de crear un branch:
+
+1. git branch branchname # just creates a branch
+2. git checkout -b branchname # creates the branch and switches the work
+   tree to it
+
+Repo consiste 2 cosas:
+
+1. Carpeta .git
+2. Workspace ("Branch temporal")
+
+Git checkout:
+
+1. A un path
+2. O un branch
+
+Stash:
+
+Funciona como una pila (LiFo)
+
+Enlazar con otro repositorio
+
+git remote add name repo_url
+
+
+====
+
+Ver cambios pendientes
+
+git diff
