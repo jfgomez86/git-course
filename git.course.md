@@ -178,3 +178,33 @@ git remote add name repo_url
 Ver cambios pendientes
 
 git diff
+
+Cambios entre branches:
+
+git diff branchname  == git diff branchname..currentbranch
+git diff branch1name..branch2name
+
+Traer cambios de repositorios remotos:
+  git fetch
+  git fetch remote branch
+
+Ver cambios en Tip of Branch (Working Tree):
+  git reflog
+
+Regresar el Working Tree a una referencia (commit, branch, estado)
+  git reset --hard 4ea9f11
+
+Pull con rebase:
+  git pull --rebase origin/master
+Equivalente a:
+  git fetch origin master
+  git rebase origin master
+
+Borrar archivos "untracked":
+  git clean -f
+
+Resolver conflictos:
+  git mergetool
+
+Commit despues de conflictos con git merge:
+  git commit -F .git/MERGE_MSG
